@@ -1,0 +1,12 @@
+version: '3'
+services:
+  pandora:
+    build: .
+    ports:
+      - "8765:8765"
+      - "8767:8767"
+      - "8080:8080"
+    volumes:
+      - ./config:/app/config
+    environment:
+      - NODE_ENV=production

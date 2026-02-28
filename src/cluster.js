@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+/**
+ * 集群支持 - 多进程
+ */
+
+const cluster = require('cluster');
+const os = require('os');
+
+function startCluster(workerFn) {
+  const numCPUs = os.cpus().length;
+  
+  if (cluster.isMaster) {
+    console.log(`🎭 主进程启动, ${numCPUs} 个工作进程`);
+    
+    for (let i = 0; i < numCPUs; i++) {
+      cluster.fork();
+    }
+    
+    cluster.on('exit', (worker, code, signal) => {
+      console.log(`工作进程 ${worker.process.pid} 退出`);
+      cluster.fork();
+    });
+  } else {
+    workerFn();
+  }
+}
+
+module.exports = { startCluster };

@@ -1,0 +1,40 @@
+{
+  "name": "pandora-network",
+  "version": "0.1.0",
+  "description": "Distributed Multi-Agent Collaboration Network - 分布式多智能体协作网络",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "broadcast": "node src/broadcast_server.js",
+    "web": "node src/web_client.js",
+    "rest": "node src/rest_api.js",
+    "knowledge": "node src/knowledge/index.js",
+    "keys": "node src/generate_keys.js",
+    "stats": "node src/stats.js",
+    "test": "node src/test.js",
+    "dashboard": "node src/dashboard.js"
+  },
+  "keywords": [
+    "p2p",
+    "multi-agent",
+    "collaboration",
+    "distributed",
+    "network",
+    "websocket",
+    "ai",
+    "agent"
+  ],
+  "author": "Pandora Network",
+  "license": "MIT",
+  "homepage": "https://github.com/ilikeanime001/pandora",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilikeanime001/pandora.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}

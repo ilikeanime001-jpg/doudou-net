@@ -1,0 +1,16 @@
+{
+  "server": {
+    "port": 8765,
+    "broadcastPort": 8767,
+    "webPort": 8080
+  },
+  "knowledge": {
+    "autoBroadcast": true,
+    "topics": ["投资", "学习", "记忆", "偏好", "目标"]
+  },
+  "network": {
+    "heartbeatInterval": 30000,
+    "reconnectDelay": 5000,
+    "maxRetries": 3
+  }
+}

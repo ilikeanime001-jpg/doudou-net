@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Config (包含密钥，不上传)
+config/identity.json
+config/node_info.json
+
+# Data
+config/knowledge_*.json
+config/message_queue.json
+exports/*.json
+exports/*.csv
+backups/
+
+# Temp
+temp/
+tmp/
+*.tmp
+
+# Build
+dist/
+build/
