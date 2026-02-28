@@ -17,7 +17,7 @@ const html = `
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pandora 知识网络</title>
+  <title>DoudouNet 知识网络</title>
   <style>
     body { font-family: -apple-system, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
     h1 { color: #333; }
@@ -29,7 +29,7 @@ const html = `
   </style>
 </head>
 <body>
-  <h1>🎭 Pandora 知识网络</h1>
+  <h1>🎭 DoudouNet 知识网络</h1>
   
   <div class="card">
     <h3>连接状态</h3>
@@ -92,7 +92,7 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(\`
-🎭 Pandora Web 界面
+🎭 DoudouNet Web 界面
 http://localhost:\${PORT}
 Windows 访问: http://192.168.1.156:\${PORT}
   \`);

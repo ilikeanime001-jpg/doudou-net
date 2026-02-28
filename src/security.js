@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Pandora 安全模块
+ * DoudouNet 安全模块
  */
 
 const crypto = require('crypto');

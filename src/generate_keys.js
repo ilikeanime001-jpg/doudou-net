@@ -10,7 +10,7 @@ const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
-console.log('🔐 生成 Pandora 节点密钥...\n');
+console.log('🔐 生成 DoudouNet 节点密钥...\n');
 
 // 生成密钥对 (ECDH + Ed25519 风格)
 const { publicKey, privateKey } = crypto.generateKeyPairSync('x25519', {

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * 1.2 & 1.3 WebSocket 服务器 + 握手协议
- * Pandora 节点通信核心
+ * DoudouNet 节点通信核心
  * 
  * 使用: 
  *   node scripts/server.js              # 启动服务器
@@ -61,7 +61,7 @@ function createMessage(type, payload) {
 function createHandshake() {
   return createMessage(MSG_TYPES.HANDSHAKE, {
     node_id: identity.node_id,
-    name: identity.name || 'Pandora Node',
+    name: identity.name || 'DoudouNet Node',
     version: '1.0.0',
     capabilities: ['task', 'knowledge', 'relay'],
     port: PORT
@@ -75,7 +75,7 @@ function handleHandshake(data, ws) {
   // 发送握手响应
   const ack = createMessage(MSG_TYPES.HANDSHAKE_ACK, {
     node_id: identity.node_id,
-    name: identity.name || 'Pandora Node',
+    name: identity.name || 'DoudouNet Node',
     version: '1.0.0',
     capabilities: ['task', 'knowledge', 'relay']
   });
@@ -148,7 +148,7 @@ function startServer() {
   
   console.log(`
 ╔════════════════════════════════════════╗
-║         🎭 Pandora Node               ║
+║         🎭 DoudouNet Node               ║
 ║         WebSocket 服务器              ║
 ╠════════════════════════════════════════╣
 ║  节点ID: ${identity.node_id}   

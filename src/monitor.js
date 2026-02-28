@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
- * Pandora 状态监控
+ * DoudouNet 状态监控
  */
 
 const fs = require('fs');
 const { exec } = require('child_process');
 
-console.log('🎭 Pandora 状态监控');
+console.log('🎭 DoudouNet 状态监控');
 console.log('==================\n');
 
 // 1. 检查知识库

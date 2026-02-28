@@ -1,5 +1,5 @@
 {
-  "name": "pandora-network",
+  "name": "doudou-net",
   "version": "0.1.0",
   "description": "Distributed Multi-Agent Collaboration Network - 分布式多智能体协作网络",
   "main": "src/server.js",
@@ -12,7 +12,9 @@
     "keys": "node src/generate_keys.js",
     "stats": "node src/stats.js",
     "test": "node src/test.js",
-    "dashboard": "node src/dashboard.js"
+    "dashboard": "node src/dashboard.js",
+    "example:server": "node examples/simple-server.js",
+    "example:client": "node examples/simple-client.js"
   },
   "keywords": [
     "p2p",
@@ -24,12 +26,12 @@
     "ai",
     "agent"
   ],
-  "author": "Pandora Network",
+  "author": "Doudou & Contributors",
   "license": "MIT",
-  "homepage": "https://github.com/ilikeanime001/pandora",
+  "homepage": "https://github.com/ilikeanime001/doudou-net",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ilikeanime001/pandora.git"
+    "url": "https://github.com/ilikeanime001/doudou-net.git"
   },
   "engines": {
     "node": ">=16.0.0"

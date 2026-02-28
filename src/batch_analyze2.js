@@ -7,7 +7,7 @@ const fs = require('fs');
 
 const packets = JSON.parse(fs.readFileSync('config/knowledge_packets.json', 'utf-8'));
 
-console.log('📊 Pandora 知识分析报告');
+console.log('📊 DoudouNet 知识分析报告');
 console.log('='.repeat(40));
 console.log(`\n总数: ${packets.length} 条知识\n`);
 

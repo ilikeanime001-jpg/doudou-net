@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Pandora 知识广播服务器
+ * DoudouNet 知识广播服务器
  * 自动向连接的客户端发送知识
  */
 
@@ -26,7 +26,7 @@ const wss = new WebSocket.Server({ port: PORT });
 
 console.log(`
 ╔════════════════════════════════════════╗
-║     🎭 Pandora 知识广播服务器          ║
+║     🎭 DoudouNet 知识广播服务器          ║
 ╠════════════════════════════════════════╣
 ║  端口: ${PORT}                         
 ║  知识: ${packets.length} 个                   
@@ -43,7 +43,7 @@ wss.on('connection', (ws) => {
   // 发送握手
   ws.send(JSON.stringify({
     type: 'handshake',
-    payload: { node_id: 'broadcast-server', name: 'Pandora Knowledge Hub', version: '1.0.0' }
+    payload: { node_id: 'broadcast-server', name: 'DoudouNet Knowledge Hub', version: '1.0.0' }
   }));
   
   // 自动广播知识

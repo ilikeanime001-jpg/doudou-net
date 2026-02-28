@@ -26,7 +26,7 @@ function generateDashboard() {
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Pandora Dashboard</title>
+  <title>DoudouNet Dashboard</title>
   <style>
     body { font-family: -apple-system; padding: 20px; background: #f5f5f5; }
     .card { background: white; padding: 20px; margin: 10px 0; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
@@ -36,7 +36,7 @@ function generateDashboard() {
   </style>
 </head>
 <body>
-  <h1>🎭 Pandora Dashboard</h1>
+  <h1>🎭 DoudouNet Dashboard</h1>
   
   <div class="card">
     <h2>概览</h2>

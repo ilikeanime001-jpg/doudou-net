@@ -19,7 +19,7 @@ try {
 const rl = readline.createInterface({ process.stdin, process.stdout });
 
 function menu() {
-  console.log('\n🎭 Pandora 增强搜索');
+  console.log('\n🎭 DoudouNet 增强搜索');
   console.log('==================');
   console.log(`📚 已接收: ${received.length} 条`);
   console.log('1. 搜索');
@@ -80,5 +80,5 @@ function connect() {
   });
 }
 
-console.log('🎭 Pandora 增强搜索');
+console.log('🎭 DoudouNet 增强搜索');
 menu();

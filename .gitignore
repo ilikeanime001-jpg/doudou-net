@@ -34,3 +34,6 @@ tmp/
 # Build
 dist/
 build/
+
+# 项目特定
+assets/icon.svg

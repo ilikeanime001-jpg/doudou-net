@@ -10,7 +10,7 @@ const packets = JSON.parse(fs.readFileSync('config/knowledge_packets.json', 'utf
 
 // 导出为 Markdown
 function exportMarkdown() {
-  let md = '# Pandora 知识库\n\n';
+  let md = '# DoudouNet 知识库\n\n';
   
   const topics = {};
   packets.forEach(p => {

@@ -9,7 +9,7 @@ const path = require('path');
 const readline = require('readline');
 
 // 数据保存路径
-const DATA_DIR = path.join(process.env.APPDATA || process.env.HOME, 'Pandora');
+const DATA_DIR = path.join(process.env.APPDATA || process.env.HOME, 'DoudouNet');
 const RECEIVED_FILE = path.join(DATA_DIR, 'knowledge_received.json');
 
 // 确保目录存在
@@ -48,7 +48,7 @@ let ws = null;
 function showMenu() {
   console.log('\n');
   console.log('════════════════════════════════════════');
-  console.log('🎭 Pandora 知识搜索 (已保存到本地)');
+  console.log('🎭 DoudouNet 知识搜索 (已保存到本地)');
   console.log('════════════════════════════════════════');
   console.log(`📚 已接收知识: ${receivedKnowledge.length} 条`);
   console.log('───────────────────────────────────────');
@@ -198,7 +198,7 @@ function connectServer() {
 
 // 启动
 console.log('════════════════════════════════════════');
-console.log('🎭 Pandora 知识搜索客户端');
+console.log('🎭 DoudouNet 知识搜索客户端');
 console.log('════════════════════════════════════════');
 console.log(`数据保存位置: ${RECEIVED_FILE}`);
 console.log('');

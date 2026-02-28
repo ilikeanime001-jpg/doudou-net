@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * 1.2 客户端连接
- * 连接到其他 Pandora 节点
+ * 连接到其他 DoudouNet 节点
  * 
  * 使用: 
  *   node scripts/client.js <服务器地址>
@@ -62,7 +62,7 @@ ws.on('open', () => {
   // 发送握手
   ws.send(JSON.stringify(createMessage(MSG_TYPES.HANDSHAKE, {
     node_id: identity.node_id,
-    name: identity.name || 'Pandora Node',
+    name: identity.name || 'DoudouNet Node',
     version: '1.0.0',
     capabilities: ['task', 'knowledge', 'relay']
   })));
@@ -88,7 +88,7 @@ ws.on('message', (data) => {
         // 响应握手
         ws.send(JSON.stringify(createMessage(MSG_TYPES.HANDSHAKE_ACK, {
           node_id: identity.node_id,
-          name: identity.name || 'Pandora Node'
+          name: identity.name || 'DoudouNet Node'
         })));
         break;
         
